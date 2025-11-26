@@ -61,22 +61,15 @@ This enables the use of continent and region as filters and for building a fille
 
    A calculated field is created to map the parameter choice to the correct numeric field:  
 
-   `CASE [Choose a Metric]
-        WHEN 'Overall Rating'        THEN [Rating]
-        
-        WHEN 'Cabin Staff Service'   THEN [Cabin Staff Service]
-        
-        WHEN 'Entertainment'         THEN [Entertainment]
-        
-        WHEN 'Food'                  THEN [Food Beverages]
-        
-        WHEN 'Ground Service'        THEN [Ground Service]
-        
-        WHEN 'Seat Comfort'          THEN [Seat Comfort]
-        
-        WHEN 'Value'                 THEN [Value For Money]
-   END`
-
+   CASE [Choose a Metric]
+    WHEN 'Overall Rating'        THEN [Rating]
+    WHEN 'Cabin Staff Service'   THEN [Cabin Staff Service]
+    WHEN 'Entertainment'         THEN [Entertainment]
+    WHEN 'Food'                  THEN [Food Beverages]
+    WHEN 'Ground Service'        THEN [Ground Service]
+    WHEN 'Seat Comfort'          THEN [Seat Comfort]
+    WHEN 'Value'                 THEN [Value For Money]
+END
 
    This "Metric Selected" field is then used in charts (e.g., as AVG([Metric Selected])) so that all main visuals update automatically when the user changes the metric parameter.
 
