@@ -62,7 +62,6 @@ This enables the use of continent and region as filters and for building a fille
    A calculated field is created to map the parameter choice to the correct numeric field:  
 
    `CASE [Choose a Metric]
-   
         WHEN 'Overall Rating'        THEN [Rating]
         
         WHEN 'Cabin Staff Service'   THEN [Cabin Staff Service]
@@ -76,7 +75,6 @@ This enables the use of continent and region as filters and for building a fille
         WHEN 'Seat Comfort'          THEN [Seat Comfort]
         
         WHEN 'Value'                 THEN [Value For Money]
-        
    END`
 
 
