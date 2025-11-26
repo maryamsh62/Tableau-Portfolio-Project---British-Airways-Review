@@ -1,4 +1,4 @@
-# British Airways Customer Reviews – Tableau Dashboard
+# British Airways Review – Tableau Dashboard
 
 
 ![British Airways Review Dashboard](https://github.com/maryamsh62/Tableau-Portfolio-Project---British-Airways-Review/blob/master/British%20Airways%20Review%20Dashboard.png)
@@ -40,7 +40,7 @@ This enables the use of continent and region as filters and for building a fille
 
 ## 🧮 Key Tableau Features & Calculations
 
-`1. KPI Parameter: “Choose a Metric”`
+**1. KPI Parameter: “Choose a Metric”**
 
    To make the dashboard flexible, a string parameter called "Choose a Metric" is created. It allows the user to toggle which rating metric is shown in the visuals.
 
@@ -57,7 +57,7 @@ This enables the use of continent and region as filters and for building a fille
          - Seat Comfort
          - Value (Value stands for “Value for Money”)
 
-`2. Calculated Field: Metric Selected`
+**2. Calculated Field: Metric Selected**
 
    A calculated field is created to map the parameter choice to the correct numeric field:  
 
@@ -75,7 +75,7 @@ This enables the use of continent and region as filters and for building a fille
    This "Metric Selected" field is then used in charts (e.g., as AVG([Metric Selected])) so that all main visuals update automatically when the user changes the metric parameter.
 
 
-` 3. Aircraft Grouping`
+ **3. Aircraft Grouping**
 
    For the aircraft filter, only aircraft with at least 50 reviews are shown individually. All aircraft types with fewer than 50 reviews are grouped into a single category called "Various". This keeps the visualizations readable while still preserving the long tail of less-frequent aircraft.
     
