@@ -1,8 +1,9 @@
 # British Airways Customer Reviews – Tableau Dashboard
 
 
-![British Airways Review Dashboard]()
+![British Airways Review Dashboard](https://github.com/maryamsh62/Tableau-Portfolio-Project---British-Airways-Review/blob/master/British%20Airways%20Review%20Dashboard.png)
 
+[TableauPublic](https://public.tableau.com/app/profile/maryamsadat.shakeri/viz/BritishAirwaysReview_17616194116050/Dashboard1)
 
 ## Project Overview
 
@@ -17,9 +18,9 @@ This Tableau project analyzes British Airways customer reviews to show how satis
 
 ## Project Files
 
-- `British Airways Review.twbx` : Packaged Tableau workbook containing the full interactive dashboard and data model.
-- `ba_reviews.csv` : Main review dataset with 1,324 rows and 19 columns of British Airways customer reviews (2016–2023). 
-- `Countries.csv` : The country mapping table is used to enrich each review with continent and region information.
+- `British Airways Review.twbx`: Packaged Tableau workbook containing the full interactive dashboard and data model.
+- `ba_reviews.csv`: Main review dataset with 1,324 rows and 19 columns of British Airways customer reviews (2016–2023). 
+- `Countries.csv`: The country mapping table is used to enrich each review with continent and region information.
 - `British Airways Dashboard.png`: The picture of the Tableau Visualization Dashboard
 
 
@@ -41,7 +42,7 @@ This enables the use of continent and region as filters and for building a fille
 
 `1. KPI Parameter: “Choose a Metric”`
 
-   To make the dashboard flexible, a string parameter called "Choose a Metric" is created. It allows the user to toggle         which rating metric is shown in the visuals.
+   To make the dashboard flexible, a string parameter called "Choose a Metric" is created. It allows the user to toggle which rating metric is shown in the visuals.
 
    Parameter settings:
        1. Name: Choose a Metric
@@ -71,7 +72,7 @@ This enables the use of continent and region as filters and for building a fille
    END`
 
 
-   This "Metric Selected" field is then used in charts (e.g., as AVG([Metric Selected])) so that all main visuals        updateautomatically when the user changes the metric parameter.
+   This "Metric Selected" field is then used in charts (e.g., as AVG([Metric Selected])) so that all main visuals update automatically when the user changes the metric parameter.
 
 
 ` 3. Aircraft Grouping`
@@ -105,11 +106,11 @@ The dashboard is designed to be fully interactive:
  The dashboard shows that British Airways’ customer satisfaction is **generally low to middling** over the 2016–2023 period:
 - The overall average rating is 4.2, while sub-scores are modest: Cabin Staff Service 3.3, Ground Service 3.0, Seat Comfort 2.9, Value for Money 2.8, Food & Beverages 2.4, and Entertainment only 1.4. Entertainment and food clearly stand out as the weakest parts of the experience.
 
-- The monthly trend in overall ratings is unstable. From 2016 to 2019, scores hover around mid-range levels, but from 2020 onward, there are several sharp declines and more months with ratings below 4, indicating increasing inconsistency and a gradual downward shift in customer satisfaction.
+- The monthly trend in overall ratings is unstable. From 2016 to 2019, scores hover around mid-range levels. Still, from 2020 onward, there are several sharp declines and more months with ratings below 4, indicating increasing inconsistency and a gradual downward shift in customer satisfaction.
 
 - Customer satisfaction varies by country, with some markets showing noticeably lower average ratings (darker shaded regions on the map), indicating that the perceived quality of service is not uniform across the network.
 
-- By aircraft type, Boeing 747-400 has the highest average rating (4.7), followed by Boeing 747, 787, and 777 (≈4.4) and A320 (4.3). At the lower end, A321 scores 3.6 and A319/777-200 around 3.8. The “Various” group attracts the highest number of reviews but only a moderate rating (4.1), highlighting that not all fleets deliver the same level of satisfaction.
+- By aircraft type, Boeing 747-400 has the highest average rating (4.7), followed by Boeing 747, 787, and 777 (≈4.4), and A320 (4.3). At the lower end, the A321 scores 3.6, and the A319/777-200 around 3.8. The “Various” group attracts the highest number of reviews but only a moderate rating (4.1), highlighting that not all fleets deliver the same level of satisfaction.
 
 
 ## Conclusion
